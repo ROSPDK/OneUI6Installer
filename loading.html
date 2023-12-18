@@ -1,0 +1,39 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head> 
+<meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+<title>Loading</title> 
+<style>
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+}
+body {
+  background-color: black;
+}
+</style> 
+<link rel="icon" href="favicon.ico" type="image/x-icon"> 
+</head> 
+<body> 
+<main> 
+<h1 style="text-align: center">0</h1>
+<h1>SAMSUNG</h1>
+</main> 	
+<script>
+let counter = document.querySelector('h1');
+let count = 1;
+
+setInterval(()=>{
+
+    counter.innerText = count;
+    count++
+    
+    if(count > 100) location.replace('www/index.html')
+    
+},300)
+</script> 
+</body> 
+</html>
